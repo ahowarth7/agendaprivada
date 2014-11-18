@@ -1,0 +1,349 @@
+<public:component tagName=Time>
+	<public:defaults viewLinkContent tabStop="true" viewMasterTab="false" />
+	<public:property name="label" />
+	<public:property name="info" />
+	<public:property name="disabledEdit" />
+	<public:property name="display" />
+	<public:property name="visibility" />
+	<public:property name="optional" />
+	<public:property name="type" />
+	<public:property name="langCode" />
+	<public:property name="fieldData" />
+	<public:property name="value" />
+	<public:property name="status" />
+	<public:property name="validateicon" />
+	<public:method name="checkField" internalname="DoBlur" />
+	<attach event="ondocumentready" handler="DoInit"  />
+	<attach event="onmouseenter" handler="showInfo"  />
+	<attach event="onmouseout" handler="hideInfo"  />
+	<attach event="onkeydown" handler="showInfo"  />
+	<!--<attach event="onmousedown" handler="showInfo"  />-->
+	<attach event="onfocus" handler="showInfo"  />
+	<attach event="onblur" handler="DoBlur"  />
+	<attach event="onpropertychange" handler="DoChangeProperty"  />
+</public:component>
+<style>
+input.inputText {width:30px; font:normal 8pt Tahoma; vertical-align:center;}
+span.labeltext {font:normal 8pt Tahoma; width:100px; padding:0px 5px 0px 5px; vertical-align:center;}
+img.statusIcon {vertical-align:center;}
+span.frmtext {font:normal 8pt Tahoma; padding:0px 5px 0px 5px; vertical-align:center;}
+select.selectText {font:normal 8pt Tahoma;vertical-align:center;}
+</style>
+<xml id="langPackXML">
+<langs>
+	<lang code="1">
+		<key code="001">To</key>
+		<key code="002"></key>
+		<key code="003"></key>
+		<key code="004"></key>
+		<key code="005">AM</key>
+		<key code="006">PM</key>
+	</lang>
+	<lang code="2">
+		<key code="001">至</key>
+		<key code="002">時</key>
+		<key code="003">分</key>
+		<key code="004">秒</key>
+		<key code="005">上午</key>
+		<key code="006">下午</key>
+	</lang>
+	<lang code="3">
+		<key code="001">至</key>
+		<key code="002">時</key>
+		<key code="003">分</key>
+		<key code="004">秒</key>
+		<key code="005">上午</key>
+		<key code="006">下午</key>
+	</lang>
+</langs>
+</xml>
+<script>
+window.onblur = hideInfo;
+langPackXML.async = false;
+var imagePath = ""
+var oPopup;
+
+function showInfo() {
+	if (disabledEdit == "true")return;
+	if (info == null)return;
+	if (!oPopup) oPopup =  window.createPopup();
+	if (oPopup.isOpen)return;
+	var menuLeft = event.srcElement.offsetWidth + 1;
+	var menuTop = 0;
+	var menuWidth = 300;
+	var menuHeight = 35;
+	oPopup.document.body.innerHTML = "<div style='overflow:auto; font:normal 8pt Tahoma; width:300px; height:35px; background: lightgoldenrodyellow; border:1 solid black; padding:2px 5px 2px 5px; color:black;'>" + info + "</div>";
+	oPopup.show(menuLeft, menuTop, menuWidth, menuHeight, event.srcElement);
+	return false;
+}
+
+function DoChangeProperty() {
+	switch(event.propertyName) {
+		case "disabledEdit":
+			if (document.all.timemm)document.all.timemm.disabled = (disabledEdit == "true"?true:false);
+			if (document.all.timess)document.all.timess.disabled = (disabledEdit == "true"?true:false);
+			document.all.timehr.disabled = (disabledEdit == "true"?true:false);
+			document.all.timeperiod.disabled = (disabledEdit == "true"?true:false);
+			if (document.all.timemm1)document.all.timemm1.disabled = (disabledEdit == "true"?true:false);
+			if (document.all.timess1)document.all.timess1.disabled = (disabledEdit == "true"?true:false);
+			if (document.all.timehr1)document.all.timehr1.disabled = (disabledEdit == "true"?true:false);
+			document.body.disabled = document.all.timehr.disabled;
+			document.all.img.style.display = (disabledEdit == "true"?"none":"");
+			break;
+		case "display":
+			style.display = display;
+			break;
+		case "visibility":
+			style.visibility = visibility;
+			break;
+		case "fieldData":
+			if (fieldData == "") return;
+			if (type == 1 || type == 3 || type == 5) {
+				timeperiod.value = (parseInt(fieldData.split(":")[0]) > 12?1:0)
+				var timehrvalue = fieldData.split(":")[0];
+				timehr.value = (parseInt(timehrvalue) > 12 && timehrvalue.substr(0,1) !="0")?parseInt(timehrvalue)-12:timehrvalue
+				if (type == 3 || type == 1) timemm.value = fieldData.split(":")[1]
+				if (type == 1) timess.value = fieldData.split(":")[2]
+			}
+			else if (type == 2 || type == 4 || type == 6) {
+				if (fieldData.split("|")[0] != "") {
+					timeperiod.value = (parseInt(fieldData.split("|")[0].split(":")[0]) > 12?1:0)
+					var timehrvalue = fieldData.split("|")[0].split(":")[0];
+					timehr.value = (parseInt(timehrvalue) > 12 && timehrvalue.substr(0,1) !="0")?parseInt(timehrvalue)-12:timehrvalue
+					if (type == 2 || type == 4) timemm.value = fieldData.split("|")[0].split(":")[1]
+					if (type == 2) timess.value = fieldData.split("|")[0].split(":")[2]
+				}				
+
+				if (fieldData.split("|").length == 1) return;
+				timeperiod1.value = (parseInt(fieldData.split("|")[1].split(":")[0]) > 12?1:0)
+				var timehrvalue = fieldData.split("|")[1].split(":")[0];
+				timehr1.value = (parseInt(timehrvalue) > 12 && timehrvalue.substr(0,1) !="0")?parseInt(timehrvalue)-12:timehrvalue
+				if (type == 4 || type == 2) timemm1.value = fieldData.split("|")[1].split(":")[1]
+				if (type == 2) timess1.value = fieldData.split("|")[1].split(":")[2]
+			
+			}			
+			break;
+		case "status":
+			if (validateicon=="false") return;
+			document.all.img.src = imagePath + (status == null?"blank.gif":(status == "valid"?"yes.gif":(value=="" || value==null?"exclamation.gif":"no.gif")));
+			document.all.img.style.display = "";
+			break;
+	}
+}
+
+function hideInfo() {
+	if (oPopup)oPopup.hide();
+}
+
+function Formate_Date(elementid) {
+
+	var str = "";
+	var definename = (elementid == null)?"":elementid;
+	var timestr = "";
+
+	timestr = "<select id=timeperiod" + definename + " class=selectText " + (disabledEdit=='true'?'disabled':'') + ">";
+	timestr += "<option value=''></option>";
+	timestr += "<option value=0>" + langPack("005") + "</option>";
+	timestr += "<option value=1>" + langPack("006") + "</option>";
+	timestr += "</select>";
+
+	
+	if (langCode == 1) {
+			str += "<input id=timehr" + definename + " size=2 maxlength=2 type=txt class=inputText " + (disabledEdit=='true'?'disabled':'') + " onkeypress='DoCheckNum();'>";
+		if (type == 1 || type == 2 || type == 3 || type == 4)  
+			str += ":<input id=timemm" + definename + " size=2 maxlength=2 type=txt class=inputText " + (disabledEdit=='true'?'disabled':'') + " onkeypress='DoCheckNum();'>";
+		if (type == 1 || type == 2) 
+			str += ":<input id=timess" + definename + " size=2 maxlength=2 type=txt class=inputText " + (disabledEdit=='true'?'disabled':'') + " onkeypress='DoCheckNum();'>";
+		str += timestr;
+	}
+	else {
+		str += timestr;
+		str += "<input id=timehr" + definename + " size=2 maxlength=2 type=txt class=inputText " + (disabledEdit=='true'?'disabled':'') + " onkeypress='DoCheckNum();'><span class=frmText>" + langPack("002") + "</span>";
+		if (type == 1 || type == 2 || type == 3 || type == 4)  
+			str += "<input id=timemm" + definename + " size=2 maxlength=2 type=txt class=inputText " + (disabledEdit=='true'?'disabled':'') + " onkeypress='DoCheckNum();'><span class=frmText>" + langPack("003")  + "</span>";
+		if (type == 1 || type == 2) 
+			str += "<input id=timess" + definename + " size=2 maxlength=2 type=txt class=inputText " + (disabledEdit=='true'?'disabled':'') + " onkeypress='DoCheckNum();'><span class=frmText>" + langPack("004")  + "</span>";
+	}
+	return str;
+}
+
+function DoInit() {
+	element.hideFocus = true;
+	style.color = (optional == "true")?"dodgerblue":"dimgray";
+	if (display != null)style.display = display;
+	if (visibility != null)style.visibility = visibility;
+
+	var str = "", timestr="";
+
+	if (type == 1 || type == 3 || type == 5) {
+		str += Formate_Date();
+	}
+	else if (type == 2 || type == 4 || type == 6) {
+		str += Formate_Date();
+		str += "<span class=frmText>" + langPack("001") + "</span>";
+		str += Formate_Date("1");
+	}
+
+	document.body.innerHTML = (label?"<span class=labeltext>" + label + "</span>":"") + str + "<img src='"+imagePath+"blank.gif' id=img style=display:none>";
+	if (document.all.timemm) timemm.style.color = style.color;
+	if (document.all.timemm1) timemm1.style.color = style.color;
+	if (document.all.timess) timess.style.color = style.color;
+	if (document.all.timess1) timess1.style.color = style.color;
+	if (document.all.timehr) timehr.style.color = style.color;
+	if (document.all.timehr1) timehr1.style.color = style.color;
+	if (document.all.timeperiod) timeperiod.style.color = style.color;
+	if (document.all.timeperiod1) timeperiod1.style.color = style.color;
+
+	if (disabledEdit != null) document.body.disabled = disabledEdit;
+
+		
+}
+
+function DoBlur() {
+	hideInfo();
+	var checkStatus = checkValid();
+	if (checkStatus == "valid") {
+		if (type == 1) value = (timeperiod.value=='')?"":GetTimeValue();
+		if (type == 3) value = (timeperiod.value=='')?"":GetTimeValue();
+		if (type == 5) value = (timeperiod.value=='')?"":GetTimeValue();
+		if (type == 2) value = (timeperiod.value=='' && timeperiod1.value=='')?"":GetTimeValue();
+		if (type == 4) value = (timeperiod.value=='' && timeperiod1.value=='')?"":GetTimeValue();
+		if (type == 6) value = (timeperiod.value=='' && timeperiod1.value=='')?"":GetTimeValue();
+	}
+	else
+		value = null;
+
+	status = checkStatus;
+
+	return status;
+}
+
+function GetTimeValue() {
+
+	var definename = "";
+	var timeperiod = document.getElementById("timeperiod" + definename).value
+	var hour_from = document.getElementById("timehr" + definename).value
+	if (timeperiod == 1) 
+		var hour_from = (hour_from.substr(0,1) !="0"?parseInt(hour_from) +12:parseInt(hour_from.substr(1,1))+12);
+	else
+		var hour_from = (hour_from.substr(0,1) =="0"?hour_from.substr(1,1):hour_from);
+
+	if (type == "2" || type == "4" || type=="6") {
+		var definename = "1";
+		var timeperiod = document.getElementById("timeperiod" + definename).value
+		var hour_to = document.getElementById("timehr" + definename).value
+		if (timeperiod == 1) 
+			var hour_to = (hour_to.substr(0,1) !="0"?parseInt(hour_to) +12:parseInt(hour_to.substr(1,1))+12);
+		else
+			var hour_to = (hour_to.substr(0,1) =="0"?hour_to.substr(1,1):hour_to);
+	}
+	
+	switch (parseInt(type)) {
+		case 1:
+			return hour_from + ":" + timemm.value + ":" + timess.value
+			break;
+		case 3:
+			return hour_from + ":" + timemm.value + ":00"
+			break;
+		case 5:
+			return hour_from + ":00:00"
+			break;
+		case 2:
+			return hour_from + ":" + timemm.value + ":" + timess.value + "|" + hour_to + ":" + timemm1.value + ":" + timess1.value
+			break;
+		case 4:
+			return hour_from + ":" + timemm.value + ":00|" + hour_to + ":" + timemm1.value + ":00"
+			break;
+		case 6:
+			return hour_from + ":00:00|" + hour_to + ":00:00"
+			break;
+	}
+	
+}
+
+function checkValid() {
+
+	if (disabledEdit == "true" || display =="none" || visibility == "hidden") return null;
+
+	if (type == 1) return (optional == "true" && timeperiod.value=='' && timess.value == '' && timemm.value == '' && timehr.value == '')?"valid":CheckTime()?"valid":"invalid";
+	if (type == 3) return (optional == "true" && timeperiod.value=='' && timemm.value == '' && timehr.value == '')?"valid":CheckTime()?"valid":"invalid";
+	if (type == 5) return (optional == "true" && timeperiod.value=='' && timehr.value == '')?"valid":CheckTime()?"valid":"invalid";
+	if (type == 2) return (optional == "true" && timeperiod.value=='' && timeperiod1.value=='' && timess.value == '' && timemm.value == '' && timehr.value == '' && timess1.value == '' && timemm1.value == '' && timehr1.value == '')?"valid":(CheckTimeRange())?"valid":"invalid";
+	if (type == 4) return (optional == "true" && timeperiod.value=='' && timeperiod1.value=='' && timemm.value == '' && timehr.value == '' && timemm1.value == '' && timehr1.value == '')?"valid":(CheckTimeRange())?"valid":"invalid";
+	if (type == 6) return (optional == "true" && timeperiod.value=='' && timeperiod1.value=='' && timehr.value == '' && timehr1.value == '')?"valid":(CheckTimeRange())?"valid":"invalid";
+
+}
+
+function CheckTime(elementid) {
+
+	var definename = (elementid == null)?"":elementid;
+	var hour = parseInt(document.getElementById("timehr" + definename).value);
+	var minute = (type == 1 || type == 2 || type == 3 || type == 4)?parseInt(document.getElementById("timemm" + definename).value):0;
+	var second = (type == 1 || type == 2)?parseInt(document.getElementById("timess" + definename).value):0;
+
+	if (isNaN(hour) || isNaN(minute) || isNaN(second) || timeperiod.value=='') return false;
+	
+	if (parseInt(hour) > 12 || parseInt(minute) > 59 || parseInt(second) > 59)
+		return false;
+	else
+		return true;
+
+}
+
+function CheckTimeRange() {
+
+	if (CheckTime() == false || CheckTime("1") == false) return false;
+	var definename ="";
+
+	var timeperiod = document.getElementById("timeperiod" + definename).value
+	var hour_from = document.getElementById("timehr" + definename).value
+	if (timeperiod == 1) 
+		var hour_from = (hour_from.substr(0,1) !="0"?parseInt(hour_from) +12:parseInt(hour_from.substr(1,1))+12);
+	else
+		var hour_from = (hour_from.substr(0,1) =="0"?hour_from.substr(1,1):hour_from);
+	hour_from = parseInt(hour_from);
+	var minute_from = (type == 1 || type == 2 || type == 3 || type == 4?(document.getElementById("timemm" + definename).value.substr(0,1) =="0"?document.getElementById("timemm" + definename).value.substr(1,1):parseInt(document.getElementById("timemm" + definename).value)):0);
+	var second_from = (type == 1 || type == 2?(document.getElementById("timess" + definename).value.substr(0,1) =="0"?document.getElementById("timess" + definename).value.substr(1,1):parseInt(document.getElementById("timess" + definename).value)):0);
+	var tmpfromdate=new Date(0, 0, 0, hour_from,minute_from,second_from);
+
+	definename ="1";
+	var timeperiod = document.getElementById("timeperiod" + definename).value
+	var hour_to = document.getElementById("timehr" + definename).value
+	if (timeperiod == 1) 
+		var hour_to = (hour_to.substr(0,1) !="0"?parseInt(hour_to) +12:parseInt(hour_to.substr(1,1))+12);
+	else
+		var hour_to = (hour_to.substr(0,1) =="0"?hour_to.substr(1,1):hour_to);
+	hour_to = parseInt(hour_to);
+	var minute_to = (type == 1 || type == 2 || type == 3 || type == 4?(document.getElementById("timemm" + definename).value.substr(0,1) =="0"?document.getElementById("timemm" + definename).value.substr(1,1):parseInt(document.getElementById("timemm" + definename).value)):0);
+	var second_to = (type == 1 || type == 2?(document.getElementById("timess" + definename).value.substr(0,1) =="0"?document.getElementById("timess" + definename).value.substr(1,1):parseInt(document.getElementById("timess" + definename).value)):0);
+	var tmptodate=new Date(0, 0, 0, hour_to,minute_to,second_to);
+
+	if (isNaN(tmpfromdate) && isNaN(tmptodate)) return true;
+	if (isNaN(tmpfromdate) || isNaN(tmptodate)) return false;
+
+	if (hour_to > hour_from) return true;
+	if (hour_from > hour_to) return false;
+	if (minute_to > minute_from)  return true;
+	if (minute_from > minute_to)  return false;
+	if (second_to > second_from)  return true;
+	if (second_from > second_to)  return false;
+	return true;
+	
+}
+
+function DoCheckNum() {
+
+	if (event.keyCode>='0'.charCodeAt()&&event.keyCode <= '9'.charCodeAt())
+		event.returnValue = true;
+	else
+		event.returnValue = false;
+}
+
+function langPack(key) {
+	if (langPackXML.XMLDocument.selectSingleNode("/langs/lang[@code = '" + langCode + "']/key[@code = '" + key + "']"))
+		return langPackXML.XMLDocument.selectSingleNode("/langs/lang[@code = '" + langCode + "']/key[@code = '" + key + "']").text;
+	else
+		return "undefined"
+}
+</script>
+</html>

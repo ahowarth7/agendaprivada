@@ -1,0 +1,990 @@
+BODY {
+	BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+.mainbg {
+	BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+.centerBody {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: auto; WIDTH: 779px; MARGIN-RIGHT: auto; PADDING-TOP: 0px
+}
+.container {
+	MARGIN: 0px auto; WIDTH: 779px; PADDING-TOP: 2px
+}
+#head {
+	FONT-SIZE: 11px
+}
+#foot {
+	FONT-SIZE: 11px
+}
+#bannerad {
+	FONT-SIZE: 11px
+}
+#search INPUT {
+	FONT-SIZE: 11px
+}
+#search LABEL {
+	FONT-SIZE: 11px
+}
+ HTML #head {
+	FONT-SIZE: 70%
+}
+ HTML #foot {
+	FONT-SIZE: 70%
+}
+ HTML #bannerad {
+	FONT-SIZE: 70%
+}
+#head {
+	MARGIN-TOP: 2px; BORDER-BOTTOM: #183390 3px solid; TEXT-ALIGN: right
+}
+#foot {
+	BORDER-TOP: #eee 1px solid; PADDING-TOP: 9px
+}
+#head {
+	COLOR: #666; BACKGROUND-COLOR: #fff
+}
+#foot {
+	COLOR: #666; BACKGROUND-COLOR: #fff
+}
+#head A {
+	COLOR: #183390; BACKGROUND-COLOR: #fff
+}
+#head A:visited {
+	COLOR: #183390; BACKGROUND-COLOR: #fff
+}
+#foot A {
+	COLOR: #183390; BACKGROUND-COLOR: #fff
+}
+#foot A:visited {
+	COLOR: #183390; BACKGROUND-COLOR: #fff
+}
+#head H1 A:hover {
+	TEXT-DECORATION: none
+}
+#search {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 100%; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 15px; PADDING-TOP: 0px; TEXT-ALIGN: right
+}
+#search FIELDSET {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: medium none; PADDING-TOP: 0px; BORDER-BOTTOM: medium none
+}
+#head H1 {
+	CLEAR: left; PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: normal; FONT-SIZE: 22px; FLOAT: left; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; FONT-FAMILY: Tahoma,Helvetica,Sans-Serif; TEXT-ALIGN: left
+}
+#head H1 IMG {
+	VERTICAL-ALIGN: text-bottom
+}
+#search INPUT.button {
+	BORDER-RIGHT: #2263a5 1px solid; BORDER-TOP: #2263a5 1px solid; FONT-WEIGHT: bold; BACKGROUND: url(../../images/search.gif) #cf0 repeat-x 0px 0px; BORDER-LEFT: #2263a5 1px solid; COLOR: #fff; BORDER-BOTTOM: #2263a5 1px solid
+}
+#search #q {
+	BORDER-RIGHT: #999 1px solid; BORDER-TOP: #999 1px solid; MARGIN-LEFT: 3px; BORDER-LEFT: #999 1px solid; WIDTH: 116px; BORDER-BOTTOM: #999 1px solid
+}
+#foot LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 12px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 1%
+}
+#head LI {
+	PADDING-RIGHT: 0px; DISPLAY: inline; PADDING-LEFT: 12px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 1%
+}
+#head #big6 {
+	FLOAT: left; MARGIN-BOTTOM: 15px; POSITION: relative; TOP: 4px
+}
+#head UL#netnav {
+	WIDTH: 515px; TEXT-ALIGN: right
+}
+#head UL#netnav LI.last A {
+	FONT-WEIGHT: bold
+}
+#head UL#subnav {
+	TEXT-ALIGN: right
+}
+#head #subnav LI {
+	VERTICAL-ALIGN: bottom; LINE-HEIGHT: 35px
+}
+#foot LI.first {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#head LI.first {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+#foot UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+#head UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none; TEXT-ALIGN: left
+}
+#foot UL#legal {
+	FLOAT: left
+}
+#foot UL#support {
+	TEXT-ALIGN: right
+}
+#bannerad DIV {
+	MARGIN: 10px 0px 12px; WIDTH: 100%; TEXT-ALIGN: center
+}
+UL#subnav {
+	BOTTOM: -8px; POSITION: relative
+}
+ HTML #search #q {
+	HEIGHT: 18px
+}
+ HTML #search INPUT.button {
+	HEIGHT: 18px
+}
+.advert {
+	COLOR: #4d4d4d
+}
+.homeHead {
+	FONT-SIZE: 130%; COLOR: #3eab50; FONT-FAMILY: Tahoma,Helvetica,Sans-Serif
+}
+.homefree {
+	COLOR: #2756b2
+}
+.padL25 {
+	PADDING-LEFT: 25px
+}
+.padbuttons {
+	PADDING-RIGHT: 27px; PADDING-LEFT: 19px
+}
+.signinbtn {
+	BORDER-RIGHT: #1c5425 1px solid; BORDER-TOP: #1c5425 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 11px; BACKGROUND: url(../../images/button_gradient.gif) #a4e1ae repeat-x 0px 0px; BORDER-LEFT: #1c5425 1px solid; WIDTH: 120px; COLOR: #ffffff; BORDER-BOTTOM: #1c5425 1px solid; HEIGHT: 20px
+}
+.iconheader {
+	PADDING-LEFT: 7px; BACKGROUND: #183390; COLOR: #ffffff
+}
+.padL6 {
+	PADDING-LEFT: 6px
+}
+.sepline {
+	COLOR: #183390
+}
+.contentarea {
+	PADDING-RIGHT: 14px; PADDING-LEFT: 14px; BACKGROUND: #f2f5fb; PADDING-BOTTOM: 14px; PADDING-TOP: 14px
+}
+.contentbody {
+	BORDER-RIGHT: #183390 1px solid; BORDER-TOP: #183390 1px solid; BORDER-LEFT: #183390 1px solid; BORDER-BOTTOM: #183390 1px solid
+}
+UL#bluebullet {
+	MARGIN: 16px
+}
+UL#bluebullet LI {
+	COLOR: #2756b2
+}
+.mainbody {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.TOSBg {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.secondaryseltab {
+	BACKGROUND-COLOR: #004e82
+}
+.taskbar {
+	BACKGROUND-COLOR: #ffffff
+}
+.SUContentPane {
+	BACKGROUND-COLOR: #ffffff
+}
+.SUBody {
+	BACKGROUND-COLOR: #ffffff
+}
+.SUWizPg {
+	BACKGROUND-COLOR: #ffffff
+}
+.whiteBody {
+	BACKGROUND-COLOR: #ffffff
+}
+.hdrbg_w {
+	BACKGROUND-COLOR: #ffffff
+}
+.partsmb {
+	BACKGROUND-COLOR: #ffffff
+}
+.mb {
+	BACKGROUND-COLOR: #ffffff
+}
+.bvSectionContent TR TD {
+	BACKGROUND-COLOR: #ffffff
+}
+.mswhiterow {
+	BACKGROUND-COLOR: #ffffff
+}
+.MPInfo {
+	BACKGROUND-COLOR: #ffffff
+}
+.SUMain {
+	BACKGROUND-COLOR: #ffffff
+}
+.bluebox {
+	BACKGROUND-COLOR: #ffffff
+}
+.catmb {
+	BACKGROUND-COLOR: #ffffff
+}
+.bvSectionTitle TR TD {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.bvSectionTitlePC TR TD {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.bvSectionTitle TR TD A {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.bvSectionTitlePC TR TD A {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.mib {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.beSelectedTab {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.bePreviewSelectedTab {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.beborderleft {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.beborderleftdarkbg {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.blueBottom {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.ProfileQuote {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.altListRow {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.msbluerow {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.hdrbg {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.PicTab {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.ProfileQuote {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.subnav {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.searchsubnav {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.MPEdit {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.blueNB {
+	BACKGROUND-COLOR: #f7f9fd
+}
+.whiteNB {
+	BACKGROUND-COLOR: #ffffff
+}
+.line {
+	BACKGROUND-COLOR: #cccccc
+}
+.bvSectionContent .line {
+	BACKGROUND-COLOR: #cccccc
+}
+.tpphoto {
+	BACKGROUND-COLOR: #cccccc
+}
+.bvError {
+	BACKGROUND-COLOR: #ffffdd
+}
+.bvError TABLE {
+	BACKGROUND-COLOR: #ffffdd
+}
+.bvSectionContentY TR TD {
+	BACKGROUND-COLOR: #ffffdd
+}
+.profilePendingReq {
+	BACKGROUND-COLOR: #ffffdd
+}
+.MPQuot {
+	BACKGROUND-COLOR: #d0dbf4
+}
+.blackline {
+	BACKGROUND-COLOR: #000000
+}
+.photoFolderHL {
+	BACKGROUND-COLOR: #000000
+}
+.SULayoutArea {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.abTitle {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.abTopRow {
+	BACKGROUND-COLOR: #ebf0fa
+}
+.SaveRow {
+	BACKGROUND-COLOR: #c5d2f2
+}
+.BottomPanel {
+	BACKGROUND-COLOR: #c5d2f2
+}
+.SULeftNav {
+	BACKGROUND-COLOR: #a1c3df
+}
+.beborderleftdarkbg {
+	BACKGROUND-COLOR: #c5d2f2
+}
+.beNormalTab {
+	BACKGROUND-COLOR: #c5d2f2
+}
+.beBlogNormalTab {
+	BACKGROUND-COLOR: #c5d2f2
+}
+.mainnav {
+	BACKGROUND-COLOR: #0f669f
+}
+.mainsel {
+	BACKGROUND-COLOR: #0f669f
+}
+.mainseltab {
+	BACKGROUND-COLOR: #4791c5
+}
+.mainseltab2 {
+	BACKGROUND-COLOR: #4791c5
+}
+.secondarysel {
+	BACKGROUND-COLOR: #4791c5
+}
+.secondarynav {
+	BACKGROUND-COLOR: #4791c5
+}
+.LayoutMainElement {
+	BACKGROUND-COLOR: #ced7ef
+}
+.LayoutMainElementD {
+	BACKGROUND-COLOR: #cccccc
+}
+.LayoutWellElement {
+	BACKGROUND-COLOR: #a0a0a0
+}
+.LayoutWell {
+	BACKGROUND-COLOR: #dddddd
+}
+.settingsHead {
+	BACKGROUND-COLOR: #ffffff
+}
+.genericBg {
+	BACKGROUND-COLOR: #f2f2f2
+}
+.genericFont {
+	COLOR: #f2f2f2
+}
+.blackFont {
+	COLOR: #000000
+}
+#PhotoId A {
+	COLOR: #000000
+}
+#AttachedPhotos TD {
+	COLOR: #000000
+}
+#AttachedPhotos A {
+	COLOR: #000000
+}
+BODY {
+	COLOR: #000000
+}
+.bvSectionContentPC TR TD {
+	COLOR: #000000
+}
+.search INPUT {
+	COLOR: #000000
+}
+.LayoutMainElement {
+	COLOR: #000000
+}
+.LayoutMainElementD {
+	COLOR: #000000
+}
+.LayoutWellElement {
+	COLOR: #000000
+}
+.belink {
+	COLOR: #000000
+}
+.contentFont {
+	COLOR: #000000
+}
+.sfi {
+	COLOR: #ffffff
+}
+.sfi A {
+	COLOR: #ffffff
+}
+.search {
+	COLOR: #ffffff
+}
+.big7 {
+	COLOR: #ffffff
+}
+.big7 A {
+	COLOR: #ffffff
+}
+.sf {
+	COLOR: #ffffff
+}
+.sf A {
+	COLOR: #ffffff
+}
+.shdr {
+	COLOR: #ffffff
+}
+.shdr A {
+	COLOR: #ffffff
+}
+.nsb7 {
+	COLOR: #c0c0c0
+}
+.nsb7l {
+	COLOR: #c0c0c0
+}
+.nsfl {
+	COLOR: #c0c0c0
+}
+.nss {
+	COLOR: #c0c0c0
+}
+.nsft {
+	COLOR: #c0c0c0
+}
+.nsft A {
+	COLOR: #c0c0c0
+}
+.nssg {
+	COLOR: #c0c0c0
+}
+.nsf {
+	COLOR: #c0c0c0
+}
+.txtads {
+	COLOR: #ffffff
+}
+.adbar {
+	COLOR: #ffffff
+}
+.adbar A {
+	COLOR: #ffffff
+}
+.stitle A {
+	COLOR: #ffffff
+}
+.sfl A {
+	COLOR: #ffffff
+}
+.mainnavsep {
+	COLOR: #ffffff
+}
+.mainnav {
+	COLOR: #ffffff
+}
+.mainnav A {
+	COLOR: #ffffff
+}
+.mainnav A:hover {
+	COLOR: #ffffff
+}
+.mainnav A:visited {
+	COLOR: #ffffff
+}
+.secondarynavsep {
+	COLOR: #ffffff
+}
+.secondarynav {
+	COLOR: #ffffff
+}
+.secondarynav A {
+	COLOR: #ffffff
+}
+.secondarynav A:hover {
+	COLOR: #ffffff
+}
+.seondarynav A:visited {
+	COLOR: #ffffff
+}
+.previewnavsep {
+	COLOR: #ffffff
+}
+.previewnav {
+	COLOR: #ffffff
+}
+.mainseltab {
+	COLOR: #ffffff
+}
+.mainseltab A {
+	COLOR: #ffffff
+}
+.mainseltab A:hover {
+	COLOR: #ffffff
+}
+.mainseltab A:visited {
+	COLOR: #ffffff
+}
+.secondaryseltab {
+	COLOR: #ffffff
+}
+.secondaryseltab A {
+	COLOR: #ffffff
+}
+.secondaryseltab A:hover {
+	COLOR: #ffffff
+}
+.secondaryseltab A:visited {
+	COLOR: #ffffff
+}
+.bvError A {
+	COLOR: #0000ff
+}
+.bvError TABLE A {
+	COLOR: #0000ff
+}
+.bvSectionContentY TR TD A {
+	COLOR: #0000ff
+}
+.profilePendingReq TABLE A {
+	COLOR: #0000ff
+}
+.bvError A {
+	TEXT-DECORATION: underline
+}
+.bvError TABLE A {
+	TEXT-DECORATION: underline
+}
+.bvSectionContentY TR TD A {
+	TEXT-DECORATION: underline
+}
+.profilePendingReq TABLE A {
+	TEXT-DECORATION: underline
+}
+.bvError {
+	COLOR: #000000
+}
+.bvError TABLE {
+	COLOR: #000000
+}
+.bvError TR TD {
+	COLOR: #000000
+}
+.bvSectionContentY TR TD {
+	COLOR: #000000
+}
+.profilePendingReq {
+	COLOR: #000000
+}
+.profilePendingReq TABLE {
+	COLOR: #000000
+}
+.profilePendingReq TR TD {
+	COLOR: #000000
+}
+.gray {
+	COLOR: #7f7f7f
+}
+.grayDisabled {
+	COLOR: #7f7f7f
+}
+.bvSectionContentG TR TD {
+	COLOR: #7f7f7f
+}
+.graysep {
+	COLOR: #7f7f7f
+}
+.graytitle {
+	COLOR: #7f7f7f
+}
+.notgray {
+	COLOR: #7f7f7f
+}
+.msheader TD {
+	COLOR: #7f7f7f
+}
+A {
+	COLOR: #004377
+}
+.partsmb LI {
+	COLOR: #004377
+}
+.blogpost LI {
+	COLOR: #000000
+}
+.SULeftNav {
+	COLOR: #396e9c
+}
+.redtext {
+	COLOR: red
+}
+.abTitle {
+	BORDER-RIGHT: #004377 1px solid; BORDER-TOP: #004377 1px solid; BORDER-LEFT: #004377 1px solid; BORDER-BOTTOM: 0px
+}
+.abHeader {
+	BORDER-RIGHT: #004377 1px solid; BORDER-TOP: #004377 1px solid; BORDER-LEFT: #004377 1px solid; BORDER-BOTTOM: #004377 1px solid
+}
+.abContents {
+	BORDER-RIGHT: #004377 1px solid; BORDER-TOP: 0px; BORDER-LEFT: #004377 1px solid; BORDER-BOTTOM: #004377 1px solid
+}
+.themeimg {
+	BORDER-LEFT-COLOR: #999999; BORDER-BOTTOM-COLOR: #999999; BORDER-TOP-COLOR: #999999; BORDER-RIGHT-COLOR: #999999
+}
+.taskbar {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.bvSection {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+#maintbl {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.searchsubnav {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.blueNB {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.whiteNB {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.subnav {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.modhead {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.partsmb {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.mb {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.storagebar {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.MPEdit {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.SUMain {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.SaveRow {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.PicTab {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.BottomPanel {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.blueBottom {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.blueBox {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.beNormalTab {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.bePreviewSelectedTab {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.beBlogNormalTab {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.beSelectedTab {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.beborderleftdarkbg {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.bline {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.beborderleft {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.beborderleftdarkbg {
+	BORDER-RIGHT: #b1c3ed 1px solid; BORDER-TOP: #b1c3ed 1px solid; BORDER-LEFT: #b1c3ed 1px solid; BORDER-BOTTOM: #b1c3ed 1px solid
+}
+.preview {
+	BORDER-BOTTOM: #87b3d0 1px solid
+}
+.preview A {
+	BORDER-BOTTOM: #87b3d0 1px solid
+}
+.preview A:hover {
+	BORDER-BOTTOM: #87b3d0 1px solid
+}
+.preview A:visited {
+	BORDER-BOTTOM: #87b3d0 1px solid
+}
+.mainsel {
+	BORDER-BOTTOM: #87b3d0 1px solid
+}
+.maindiv {
+	BORDER-BOTTOM: #87b3d0 1px solid
+}
+.mainseltab2 {
+	BORDER-BOTTOM: #87b3d0 1px solid
+}
+.previewnav {
+	BORDER-BOTTOM: #87b3d0 1px solid
+}
+.txtURL {
+	BORDER-RIGHT: #999999 1px solid; BORDER-TOP: #999999 1px solid; BORDER-LEFT: #999999 1px solid; BORDER-BOTTOM: #999999 1px solid
+}
+.importTable {
+	BORDER-RIGHT: #004377 1px solid; BORDER-TOP: #004377 1px solid; BORDER-LEFT: #004377 1px solid; BORDER-BOTTOM: #004377 1px solid
+}
+.mib {
+	BORDER-RIGHT: #004377 1px solid; BORDER-TOP: #004377 1px solid; BORDER-LEFT: #004377 1px solid; BORDER-BOTTOM: #004377 1px solid
+}
+.themesettingsbox {
+	BORDER-RIGHT: #004377 1px solid; BORDER-TOP: #004377 1px solid; BORDER-LEFT: #004377 1px solid; BORDER-BOTTOM: #004377 1px solid
+}
+.categoryBox {
+	BORDER-RIGHT: #004377 1px solid; BORDER-TOP: #004377 1px solid; BORDER-LEFT: #004377 1px solid; BORDER-BOTTOM: #004377 1px solid
+}
+.topline {
+	BORDER-RIGHT: #004377 1px solid; BORDER-TOP: #004377 1px solid; BORDER-LEFT: #004377 1px solid; BORDER-BOTTOM: #004377 1px solid
+}
+.sfi {
+	BORDER-TOP: #2680b4 1px solid
+}
+.bvSectionContentY {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+.bvError {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+.SULayoutArea {
+	BORDER-RIGHT: #ebf0fa 5px solid; BORDER-TOP: #ebf0fa 5px solid; BORDER-LEFT: #ebf0fa 20px solid; BORDER-BOTTOM: #ebf0fa 5px solid
+}
+.sfl {
+	BORDER-BOTTOM: #2680b4 1px solid
+}
+.LayoutIBeamTDTop {
+	BORDER-RIGHT: #ffae31 2px solid; BORDER-TOP: #ffae31 2px solid; BORDER-LEFT: #ffae31 2px solid; BORDER-BOTTOM: #ffae31 2px solid
+}
+.LayoutIBeamTDBottom {
+	BORDER-RIGHT: #ffae31 2px solid; BORDER-TOP: #ffae31 2px solid; BORDER-LEFT: #ffae31 2px solid; BORDER-BOTTOM: #ffae31 2px solid
+}
+.LayoutMainElement {
+	BORDER-RIGHT: #3169ce 1px solid; BORDER-TOP: #3169ce 1px solid; BORDER-LEFT: #3169ce 1px solid; BORDER-BOTTOM: #3169ce 1px solid
+}
+.LayoutMainElementD {
+	BORDER-RIGHT: #333333 1px solid; BORDER-TOP: #333333 1px solid; BORDER-LEFT: #333333 1px solid; BORDER-BOTTOM: #333333 1px solid
+}
+.LayoutMainColumnD {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid
+}
+.LayoutMainColumn {
+	BORDER-RIGHT: silver 1px solid; BORDER-TOP: silver 1px solid; BORDER-LEFT: silver 1px solid; BORDER-BOTTOM: silver 1px solid
+}
+.LayoutWellElement {
+	BORDER-RIGHT: #000000 1px solid; BORDER-TOP: #000000 1px solid; BORDER-LEFT: #000000 1px solid; BORDER-BOTTOM: #000000 1px solid
+}
+.LayoutWell {
+	BORDER-RIGHT: black 1px solid; BORDER-TOP: black 1px solid; BORDER-LEFT: black 1px solid; BORDER-BOTTOM: black 1px solid
+}
+#PartsBucket {
+	BORDER-RIGHT: #698aaa 1px solid; BORDER-TOP: #698aaa 1px solid; BORDER-LEFT: #698aaa 1px solid; BORDER-BOTTOM: #698aaa 1px solid
+}
+.MobileSep {
+	COLOR: #c6c6c6
+}
+.mod_tlc {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(../../Style/PersonalSpaceDefault/lc.gif)
+}
+.mod_trc-rtl {
+	BACKGROUND-POSITION: left top; BACKGROUND-IMAGE: url(../../Style/PersonalSpaceDefault/lc.gif)
+}
+.mod_trc {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(../../Style/PersonalSpaceDefault/rc.gif)
+}
+.mod_tlc-rtl {
+	BACKGROUND-POSITION: right top; BACKGROUND-IMAGE: url(../../Style/PersonalSpaceDefault/rc.gif)
+}
+.sfm {
+	BACKGROUND-POSITION: left bottom; BACKGROUND-IMAGE: url(../../Style/PersonalSpaceDefault/sft_db.jpg); BACKGROUND-REPEAT: no-repeat
+}
+.sfi {
+	BACKGROUND-IMAGE: url(../../Style/PersonalSpaceDefault/nav_gradient.gif)
+}
+.sff {
+	BACKGROUND-IMAGE: url(../../Style/PersonalSpaceDefault/nav_gradient.gif)
+}
+.modhead {
+	BACKGROUND: url(../../Style/PersonalSpaceDefault/mid_grad.gif)
+}
+.modhead {
+	BACKGROUND-IMAGE: url(../../Style/PersonalSpaceDefault/mid_grad.gif); BACKGROUND-REPEAT: repeat
+}
+.mod_tlc {
+	BACKGROUND-REPEAT: no-repeat
+}
+.mod_trc {
+	BACKGROUND-REPEAT: no-repeat
+}
+.mod_tlc-rtl {
+	BACKGROUND-REPEAT: no-repeat
+}
+.mod_trc-rtl {
+	BACKGROUND-REPEAT: no-repeat
+}
+.partsmb {
+	WIDTH: 100%
+}
+.line {
+	WIDTH: 100%; HEIGHT: 1px
+}
+.blackline {
+	WIDTH: 100%; HEIGHT: 1px
+}
+.bvSectionContent .line {
+	WIDTH: 100%; HEIGHT: 1px
+}
+.searchsubnav {
+	HEIGHT: 22px
+}
+.SUBody {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px
+}
+.subnav {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+.searchsubnav {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+.modhead {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.mod_tlc {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.mod_trc {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.mod_tlc-rtl {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.mod_trc-rtl {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.MPQuot {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.MPEdit {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 0px
+}
+.SUMain {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+.mb {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+.SaveRow {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+.BottomPanel {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 1px
+}
+.blueBottom {
+	BORDER-TOP: 0px
+}
+.catmb {
+	BORDER-TOP: 0px
+}
+.bePreviewSelectedTab {
+	BORDER-BOTTOM: 0px
+}
+.blueNB {
+	BORDER-BOTTOM: 0px
+}
+.whiteNB {
+	BORDER-BOTTOM: 0px
+}
+.beBlogNormalTab {
+	BORDER-LEFT: 0px
+}
+.beSelectedTab {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 1px
+}
+.bline {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 0px
+}
+.topline {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 0px
+}
+.beborderleft {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+.beborderleftdarkbg {
+	BORDER-TOP-WIDTH: 1px; BORDER-LEFT-WIDTH: 1px; BORDER-BOTTOM-WIDTH: 1px; BORDER-RIGHT-WIDTH: 0px
+}
+.LayoutIBeamTDTop {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 2px; BORDER-BOTTOM-WIDTH: 2px; BORDER-RIGHT-WIDTH: 2px
+}
+.LayoutIBeamTDBottom {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 2px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 2px
+}
+.star {
+	CURSOR: hand
+}
+.boxedSubHeader {
+	BORDER-RIGHT: #2756b2 1px solid; BORDER-TOP: #2756b2 1px solid; PADDING-LEFT: 3px; FONT-WEIGHT: bold; FONT-SIZE: 130%; BORDER-LEFT: #2756b2 1px solid; BORDER-BOTTOM: #2756b2 1px solid; BACKGROUND-COLOR: #f2f5fb
+}
+.hptabstable {
+	BORDER-COLLAPSE: collapse
+}
+.hptabstablecellselected {
+	BORDER-RIGHT: #c8dcf3 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #c8dcf3 1px solid; PADDING-LEFT: 6px; FONT-WEIGHT: bold; BORDER-LEFT: #c8dcf3 1px solid; COLOR: #363636; HEIGHT: 25px; BACKGROUND-COLOR: #ffffff; TEXT-ALIGN: center
+}
+.hptabstablecellnotselected {
+	BORDER-RIGHT: #c8dcf3 1px solid; PADDING-RIGHT: 6px; BORDER-TOP: #c8dcf3 1px solid; PADDING-LEFT: 6px; BORDER-LEFT: #c8dcf3 1px solid; COLOR: #707073; BORDER-BOTTOM: #c8dcf3 1px solid; HEIGHT: 25px; BACKGROUND-COLOR: #f1f8ff; TEXT-ALIGN: center
+}
+.hptabstablecellblank {
+	WIDTH: 475px; BORDER-BOTTOM: #c8dcf3 1px solid; HEIGHT: 25px
+}
+.hptabstablecellblankwithmatchad {
+	WIDTH: 335px; BORDER-BOTTOM: #c8dcf3 1px solid; HEIGHT: 25px
+}
+.hptabstablecellpadding {
+	WIDTH: 6px; BORDER-BOTTOM: #c8dcf3 1px solid; HEIGHT: 25px
+}
+.hptabstablecellcontent {
+	BORDER-RIGHT: #c8dcf3 1px solid; BORDER-LEFT: #c8dcf3 1px solid; BORDER-BOTTOM: #c8dcf3 1px solid
+}
+.hptabsclosebtn {
+	PADDING-LEFT: 20px
+}
+.hpadscell {
+	VERTICAL-ALIGN: top; WIDTH: 140px; PADDING-TOP: 25px
+}
+.hpadscellmatchdotcom {
+	VERTICAL-ALIGN: top; WIDTH: 140px; PADDING-TOP: 10px
+}
+.hpadstable {
+	WIDTH: 140px; BACKGROUND-COLOR: #edf8ed
+}
+.hpadstitle {
+	FONT-SIZE: 11px; COLOR: #898989; PADDING-TOP: 19px; FONT-FAMILY: Tahoma
+}
+.hpadsfirstrow {
+	PADDING-LEFT: 14px; FONT-SIZE: 11px; PADDING-TOP: 20px; FONT-FAMILY: Tahoma
+}
+.hpadsfirstrow A {
+	TEXT-DECORATION: underline
+}
+.hpadsrow {
+	PADDING-LEFT: 14px; FONT-SIZE: 11px; FONT-FAMILY: Tahoma
+}
+.hpadsrow A {
+	COLOR: #898989
+}

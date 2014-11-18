@@ -1,0 +1,402 @@
+<html><head><title>Preview</title>
+<style type="text/css"><!--
+html,body{
+  overflow: auto;
+  
+}
+
+.dobleLineBlue{
+      border-top:1px solid #71B5CE; border-bottom:1px solid #71B5CE; height:10;
+}
+.terminador_tabla{
+      border-top:1px solid #990000; border-bottom:1px solid #990000; height:10;
+}
+.botonesBusca {
+	BORDER-RIGHT: #3c7c31 thin outset; BORDER-TOP: #ffffff thin outset; FONT-WEIGHT: bold; FONT-SIZE: 11px; BORDER-LEFT: #ffffff thin outset; COLOR: #ffffff; BORDER-BOTTOM: #3c7c31 thin outset; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 20px; BACKGROUND-COLOR: #25ae36
+}
+
+.centerBody {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN-LEFT: auto;  MARGIN-RIGHT: auto; PADDING-TOP: 0px
+}
+.searchboxtable {
+	BORDER-COLLAPSE: collapse
+}
+.advpeoplefind {
+	FONT-SIZE: 11px; COLOR: #0068cf; FONT-FAMILY: Tahoma; TEXT-ALIGN: left
+}
+.advpeoplefindred {
+	FONT-SIZE: 11px; COLOR:#C10000; FONT-FAMILY: Tahoma; TEXT-ALIGN: left
+}
+.apssearchpagediv {
+	BORDER-RIGHT: #c8dcf3 1px solid; BORDER-TOP: #c8dcf3 1px solid; DISPLAY: none; BACKGROUND: white; BORDER-LEFT: #c8dcf3 1px solid; BORDER-BOTTOM: #c8dcf3 1px solid; POSITION: absolute
+}
+.peque {
+	FONT-SIZE: 11px; FONT-FAMILY: Tahoma;
+}
+.peque9 {
+	FONT-SIZE: 9px; FONT-FAMILY: Tahoma;
+}
+.peque10 {
+	FONT-SIZE: 10px; FONT-FAMILY: Tahoma;
+}
+.apsmaindiv {
+	FONT-SIZE: 11px; WIDTH: 243px; FONT-FAMILY: Tahoma
+}
+.apslabel {
+	PADDING-RIGHT: 13px; LEFT: 13px; COLOR: #707073; POSITION: relative
+}
+.apsinput {
+	font-family: Verdana; font-size: 10px; BORDER-RIGHT: #97b7f8 1px solid; BORDER-TOP: #97b7f8 1px solid; LEFT: 13px; PADDING-BOTTOM: 1px; BORDER-LEFT: #97b7f8 1px solid; WIDTH: 217px; TEXT-INDENT: 7px; PADDING-TOP: 1px; BORDER-BOTTOM: #97b7f8 1px solid; POSITION: relative; HEIGHT: 18px
+}
+
+.apsinputgray {
+	COLOR: #bfbbbb
+}
+.apsbuttondiv {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 13px; BORDER-TOP: medium none; BORDER-LEFT: medium none; PADDING-TOP: 20px; BORDER-BOTTOM: medium none
+}
+.inputblue {
+	BORDER-RIGHT: #c8dcf3 1px solid; BORDER-TOP: #c8dcf3 1px solid; PADDING-BOTTOM: 1px; BORDER-LEFT: #c8dcf3 1px solid; WIDTH: 224px; PADDING-TOP: 1px; BORDER-BOTTOM: #c8dcf3 1px solid; HEIGHT: 19px
+}
+A {
+	TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A {
+	COLOR: #004377
+}
+
+
+.precios_entrada {font-family: Verdana; font-size: 10px;  WIDTH: 400px; HEIGHT: 18px
+}
+.red{font-family: Verdana; font-size: 12px; color: #990000}
+.estilo1 {
+	font-family: Calibri;
+	font-size: 24px;
+	color:#000000;
+	font-style: normal;
+	font-weight: normal;
+	background:url(../imagenes/bluefireback.png);
+}
+.estilo2 {
+	font-family: Calibri;
+	font-size: 32px;
+	color:#000000;
+	font-style: normal;
+	font-weight: bold;
+
+}
+.titulologin    {
+    font-family: Calibri;
+	font-size: 32px;
+	color:#ffffff;
+	font-style: normal;
+	font-weight: bold;
+}
+
+
+/*se usa*/
+.contenidotabla{
+  font-family: arial;
+  font-size: 14px;
+  color: #000000;
+}
+.contenidotabla2{
+  font-family:Calibri;
+  font-size: 13px;
+  color: #000000;
+}
+.diafestivo {font-family: Calibri; font-size: 16px; font-weight: bold; color: #FFFF00 }
+
+
+.titulo {font-family: Calibri; font-size: 24px; font-weight: bold; color: #ffffff }
+.hora {
+  font-family: Calibri;
+  font-size: 16;
+  color:#0000FF
+  }
+.estilorecordatorio{
+
+  font-family: Calibri;
+  font-size: 16;         
+}
+
+.fondo{
+  background: url(../imagenes/bluefireback.png)
+}
+.linea{
+  background:url(../imagenes/linea.png)}
+
+
+.estilo4 {font-family: Calibri; font-size: 18px; }
+
+/* color blanco tamaño 12*/
+.estilo5 {
+	font-family: Calibri;
+	font-size: 12px;
+	color: #ffffff;
+}
+.estiloback tr th {
+font-family: Calibri;
+border-left:#000000;
+color: #ffffff;
+font-family: Calibri; font-size: 20px;
+background: url(../imagenes/bluefireback.png)
+}
+
+.style21 {
+	font-size: 12px;
+	font-family: Calibri;
+	color: #000000;
+	font-style: normal;
+}
+
+
+.estilo11 {font-family: Verdana; font-size: 10px; font-weight: bold; color: #006699; }
+.estilo15 {	font-family: Verdana;
+	font-size: 10px;
+	color: #006699;
+}
+.estilo15 {	color: #006699;
+	font-weight: bold;
+	font-size: 15px;
+	font-family: Verdana;
+}
+.usuario {
+  font-family:Calibri;
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: bold; }
+
+.estilo27 {
+    font-family: Calibri;
+	color: #ffffff;
+	font-size: 16px;
+}
+.estilo27a {
+    font-family: Calibri;
+	color: #ffffff;
+	font-size: 16px;
+}
+ /*Se usa*/
+.mes {font-size: 16px; font-family: Calibri; color: #000000 }
+.diafestivo     {font-size: 20px; font-family: Calibri; color: #FFFF00 }
+.Estilo36 {color: #000000}
+.Estilo40 {font-size: 12px; font-weight: bold; font-family: Verdana; color: #000000; }
+
+.caja {
+  font-family:verdana, arial, helvetica, sans-serif;
+  font-size:1em;
+  color:#ff0000;
+}
+
+
+.vinculo {
+	font-family: Verdana;
+	font-size: 10px;
+	color: #006699;
+	list-style-image: none;
+	list-style-type: disc;
+}
+.vinculo2 {
+	font-family: Verdana;
+	font-size: 9px;
+	color: #006699;
+	list-style-image: none;
+	list-style-type: disc;
+}
+.vinculo10B {
+	font-family: Verdana;
+	font-size: 10px;
+	font-weight:500;
+	color: #006699;
+	list-style-image: none;
+	list-style-type: disc;
+	
+}
+.style6 {font-size: 12px; font-weight: bold; font-family: Verdana; color: #FFFFFF; }
+.style7 {
+	font-size: 10px;
+	font-weight: bold;
+}
+.style3 {	font-size: 10px;
+	font-family: Verdana;
+	font-weight: bold;
+}
+.Estilo42 {color: #FFFFFF; font-weight: bold; font-family: Verdana;}
+.Estilo44 {font-size: 10px}
+.Estilo47 {color: #FFFFFF}
+.style2 {	font-size: 10px;
+	color: #0000FF;
+	font-weight: bold;
+}
+.tabnosel {FONT-WEIGHT: bold; FONT-SIZE: 9px; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+
+a.nav:link {
+			 font-family:Verdana;
+			 font-weight:bold; 
+			 color: navy;
+			 font-size:8pt;
+}
+a.nav:hover {
+			 font-family:Verdana;
+			 font-weight:bold; 
+			 color: green;
+			 font-size:8pt;
+			 background:#eeeeee;
+			
+}
+a.nav:visited {
+			 font-family:Verdana;
+			 font-weight:bold; 
+			 color: navy;
+			 font-size:8pt;
+}
+div.text{
+			 font-family:Verdana;
+			 font-weight:bold; 
+			 color: navy;
+			 font-size:8pt;
+}.textfield {
+			width:40; 
+			height:16; 
+			font-family: Verdana;
+			font-size: 9px;
+}
+#background {background:url(../imagenes/bac.png);
+
+
+
+--></style>
+</head>
+<body>
+<a name="0"></a><html>Element html</html><br>
+<a name="1"></a><body>Element body</body><br>
+<a name="2"></a><div class="dobleLineBlue">Class dobleLineBlue</div>
+<br>
+<a name="3"></a><div class="terminador_tabla">Class terminador_tabla</div>
+<br>
+<a name="4"></a><div class="botonesBusca">Class botonesBusca</div>
+<br>
+<a name="5"></a><div class="centerBody">Class centerBody</div>
+<br>
+<a name="6"></a><div class="searchboxtable">Class searchboxtable</div>
+<br>
+<a name="7"></a><div class="advpeoplefind">Class advpeoplefind</div>
+<br>
+<a name="8"></a><div class="advpeoplefindred">Class advpeoplefindred</div>
+<br>
+<a name="9"></a><div class="apssearchpagediv">Class apssearchpagediv</div>
+<br>
+<a name="10"></a><div class="peque">Class peque</div>
+<br>
+<a name="11"></a><div class="peque9">Class peque9</div>
+<br>
+<a name="12"></a><div class="peque10">Class peque10</div>
+<br>
+<a name="13"></a><div class="apsmaindiv">Class apsmaindiv</div>
+<br>
+<a name="14"></a><div class="apslabel">Class apslabel</div>
+<br>
+<a name="15"></a><div class="apsinput">Class apsinput</div>
+<br>
+<a name="16"></a><div class="apsinputgray">Class apsinputgray</div>
+<br>
+<a name="17"></a><div class="apsbuttondiv">Class apsbuttondiv</div>
+<br>
+<a name="18"></a><div class="inputblue">Class inputblue</div>
+<br>
+<a name="19"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="20"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="21"></a><a href="http://www.blumentals.net" target="_blank">Link</a><br>
+<a name="22"></a><div class="precios_entrada">Class precios_entrada</div>
+<br>
+<a name="23"></a><div class="red">Class red</div>
+<br>
+<a name="24"></a><div class="estilo1">Class estilo1</div>
+<br>
+<a name="25"></a><div class="estilo2">Class estilo2</div>
+<br>
+<a name="26"></a><div class="titulologin">Class titulologin</div>
+<br>
+<a name="27"></a><div class="contenidotabla">Class contenidotabla</div>
+<br>
+<a name="28"></a><div class="contenidotabla2">Class contenidotabla2</div>
+<br>
+<a name="29"></a><div class="diafestivo">Class diafestivo</div>
+<br>
+<a name="30"></a><div class="titulo">Class titulo</div>
+<br>
+<a name="31"></a><div class="hora">Class hora</div>
+<br>
+<a name="32"></a><div class="estilorecordatorio">Class estilorecordatorio</div>
+<br>
+<a name="33"></a><div class="fondo">Class fondo</div>
+<br>
+<a name="34"></a><div class="linea">Class linea</div>
+<br>
+<a name="35"></a><div class="estilo4">Class estilo4</div>
+<br>
+<a name="36"></a><div class="estilo5">Class estilo5</div>
+<br>
+<a name="37"></a><div class="estiloback tr th">Class estiloback tr th</div>
+<br>
+<a name="38"></a><div class="style21">Class style21</div>
+<br>
+<a name="39"></a><div class="estilo11">Class estilo11</div>
+<br>
+<a name="40"></a><div class="estilo15">Class estilo15</div>
+<br>
+<a name="41"></a><div class="estilo15">Class estilo15</div>
+<br>
+<a name="42"></a><div class="usuario">Class usuario</div>
+<br>
+<a name="43"></a><div class="estilo27">Class estilo27</div>
+<br>
+<a name="44"></a><div class="estilo27a">Class estilo27a</div>
+<br>
+<a name="45"></a><div class="mes">Class mes</div>
+<br>
+<a name="46"></a><div class="diafestivo">Class diafestivo</div>
+<br>
+<a name="47"></a><div class="Estilo36">Class Estilo36</div>
+<br>
+<a name="48"></a><div class="Estilo40">Class Estilo40</div>
+<br>
+<a name="49"></a><div class="caja">Class caja</div>
+<br>
+<a name="50"></a><div class="vinculo">Class vinculo</div>
+<br>
+<a name="51"></a><div class="vinculo2">Class vinculo2</div>
+<br>
+<a name="52"></a><div class="vinculo10B">Class vinculo10B</div>
+<br>
+<a name="53"></a><div class="style6">Class style6</div>
+<br>
+<a name="54"></a><div class="style7">Class style7</div>
+<br>
+<a name="55"></a><div class="style3">Class style3</div>
+<br>
+<a name="56"></a><div class="Estilo42">Class Estilo42</div>
+<br>
+<a name="57"></a><div class="Estilo44">Class Estilo44</div>
+<br>
+<a name="58"></a><div class="Estilo47">Class Estilo47</div>
+<br>
+<a name="59"></a><div class="style2">Class style2</div>
+<br>
+<a name="60"></a><div class="tabnosel">Class tabnosel</div>
+<br>
+<a name="61"></a><a href="http://www.blumentals.net" target="_blank" class="nav">Link, Class nav</a><br>
+<a name="62"></a><a href="http://www.blumentals.net" target="_blank" class="nav">Link, Class nav</a><br>
+<a name="63"></a><a href="http://www.blumentals.net" target="_blank" class="nav">Link, Class nav</a><br>
+<a name="64"></a><div class="text">Element div, Class text</div><br>
+<a name="65"></a><div class="textfield">Class textfield</div>
+<br>
+<a name="66"></a><div id="background">ID background</div>
+
+</body></html>
