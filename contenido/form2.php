@@ -2,7 +2,7 @@
 		
 		include("../includes/conexion_bd.php");
 		include("../includes/funciones_v2.php");
-		//f_imprime_arreglo($_GET);
+		//f_imprime_arreglo($_POST);
 
 		
 		
@@ -120,7 +120,7 @@ var newwin = window.open("../contenido/form_evento.php?fecha=" + fecha + "&hora=
 //							tabla_final.hora = tabla_recordatorio.hora_recordatorio";
 			
 						
-$consulta = "select  min(fecha) as fecha, min(hora) as hora, min(total_recordatorios) as total_recordatorios,
+echo $consulta = "select  min(fecha) as fecha, min(hora) as hora, min(total_recordatorios) as total_recordatorios,
 min(total_eventos) as total_eventos,
 min(id) as id, min(asunto)as asunto, min(lugar) as lugar, min(asiste) as asiste,
 min(descripcion) as descripcion, min(infor) as infor, min(notas) as notas

@@ -4,14 +4,14 @@
 //************************************************************
 
 //$tipo_host = "localhost";	  // Database server
-$tipo_host = "servidor";	  				
+$tipo_host = "localhost";	  				
 
 switch ($tipo_host)
 {
    case "localhost":
             $database_server = "localhost";	
-            $database_user = "admin";			 // Database username
-            $database_pass = "000";					 // Database password
+            $database_user = "root";			 // Database username
+            $database_pass = "";					 // Database password
             $database_name = "calendario";			 // Database name
             $maxlifetime = "3600";				 // Cookie max life time in seconds
         break;

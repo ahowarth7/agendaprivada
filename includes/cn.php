@@ -9,12 +9,12 @@
 //
 
 
-$tipo_host = "servidor";
+$tipo_host = "localhost";
 
 switch ($tipo_host)
 {
    case "localhost":
-         $link = mysql_connect("localhost", "admin", "000");	
+         $link = mysql_connect("localhost", "root", "");	
          $db = mysql_select_db("calendario", $link)
 		or die("no hay conexio database");			 // Cookie max life time in seconds
         break;
